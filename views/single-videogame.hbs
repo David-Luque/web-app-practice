@@ -1,0 +1,14 @@
+
+
+<p>Name: {{name}}</p>
+
+<p>developer:{{developer}}</p>
+
+<p>rating: {{rating}}</p>
+
+
+<button><a href="/edit-videogame/{{_id}}">EDITAR</a></button>
+
+<form action="/delete-game?id={{_id}}" method="POST">
+    <button type="submit">ELIMINAR</button>
+</form>

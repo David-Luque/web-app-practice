@@ -1,0 +1,51 @@
+<p>fill the form to create a videogame</p>
+
+{{#if session}}
+    {{> logOut}}
+{{/if}}
+
+{{!-- action: enlace con el que el form se va a comunicar
+method: metodo con el que el enlace se va a comunicar: GET, POST, etc...--}}
+
+<form action="/new-videogame" method="POST">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="developer">desarrollador:</label>
+    <input type="text" name="developer" id="developer">
+    <br>
+    <label for="platform">plataforma:</label>
+    <input type="text" name="platform" id="platform">
+    <br>
+    <label for="genre">genero:</label>
+    <input type="text" name="genre" id="genre">
+    <br>
+    <label for="releaseDate">fecha lanzamiento:</label>
+    <input type="text" name="releaseDate" id="releaseDate">
+    <br>
+    <label for="rating">nota:</label>
+    <input type="text" name="rating" id="rating">
+    <br>
+    <label for="pegi">codigo PEGI:</label>
+    <input type="text" name="pegi" id="pegi">
+    <br>
+    <label for="imageUrl">IMAGE URL:</label>
+    <input type="text" name="imageUrl" id="imageUrl">
+
+    <button type="submit">Create Videogame</button>
+
+</form>
+
+
+{{!-- query params after "?" --}}
+{{!-- http://localhost:3000/new-videogame ? name=juego & developer=alguien & platform=alguna & genre=cualquiera & releaseDate=2000-11-11 & rating=5 & pegi=12# --}}
+
+
+
+    {{!-- name: {type: String, required: true},
+    developer: {type: String},
+    platform: {type: [String]},
+    genre: {type: [String]},
+    releaseDate: {type: Date},
+    rating: {type: Number},
+    pegi: {type: String} --}}

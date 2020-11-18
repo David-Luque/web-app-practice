@@ -1,0 +1,23 @@
+
+<p>LOG IN:</p>
+
+
+<form action="/log-in" method="POST">
+   
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    
+    <br>
+    
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+    
+    <button type="submit">Log in</button>
+
+    {{#if errorMessage}}
+        <p>{{errorMessage}}</p> 
+    {{/if}}
+    {{!-- IF para display del mensage de error al logear solo si existe "errorMessage" --}}
+
+
+</form>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videogame-keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <a href='/all-videogames' class="navbar-item">
+        List of all videogames
+      </a>
+
+      <a href='/new-videogame' class="navbar-item">
+        Add your owns videogames
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            Jobs
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a href="/sign-up" class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a  href="/log-in" class="button is-light">
+            Log in
+          </a>
+          </a>
+          <a href="/log-out" class="button is-light">
+            Log Out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <ul>
+    <li><a href="/">home page</a> </li>
+    <li><a href="/all-videogames">list of videogames</a></li>
+  </ul>
+  
+  <hr>
+  
+  {{!-- <ul>
+    <li><a href="/sign-up">Creater new user</a></li>
+    <li> <a href="/log-in">Log In</a></li>
+  </ul> --}}
+
+
+    {{{body}}}
+
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+</body>
+</html>

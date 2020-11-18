@@ -1,0 +1,17 @@
+<p>aqui aparaceran todos los juegos</p>
+
+<hr>
+
+{{> logOut}}
+
+<ul>
+{{#each videogames}}
+    <li>
+        <a href="/videogame/{{_id}}">
+            <img src="{{imageUrl}}" alt="{{name}}">
+            <br>
+            <p>{{name}}</p>
+        </a>
+    </li>
+{{/each}}
+</ul>
